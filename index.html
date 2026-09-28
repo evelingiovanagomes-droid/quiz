@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quiz Capilar</title><link rel="stylesheet" href="css/style.css"></head>
+<body><main>
+<header><span class="brand">Quiz Capilar</span><div class="bar"><i id="prog"></i></div><span id="count"></span></header>
+<section id="quiz" hidden>
+<span id="cat" class="tag"></span><h1 id="q"></h1><p class="hint">Escolha a resposta certa</p>
+<div class="cards" id="cards"></div>
+<button id="next" class="btn" disabled>Próxima pergunta</button>
+</section>
+<section id="end" hidden><h1>Você terminou!</h1><p id="score" class="big"></p><p id="msg"></p><button id="again" class="btn">Recomeçar</button></section>
+<section id="load"><p id="loadmsg">Carregando perguntas…</p>
+<label id="pick" class="btn" hidden>Selecionar perguntas.csv<input type="file" accept=".csv" hidden></label></section>
+</main><script src="data/perguntas.js"></script><script src="js/app.js"></script></body></html>
