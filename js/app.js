@@ -63,7 +63,7 @@ function show() {
       document.querySelectorAll(".card").forEach(c => c.classList.add("flip", c.dataset.right === "true" ? "ok" : "no"));
       b.querySelector(".pick").textContent = "Sua escolha";
       reveal(p);
-      $("next").disabled = false; $("next").textContent = i === Q.length - 1 ? "Ver resultado" : "Próxima pergunta"; $("next").focus();
+      $("next").disabled = false; $("next").textContent = i === Q.length - 1 ? "Ver resultado" : "Próxima pergunta"; 
     };
     $("cards").appendChild(b);
   });
